@@ -80,6 +80,9 @@ test_environment:
 # PROJECT RULES                                                                 #
 #################################################################################
 
+# create joined csv
+data/interim/loan_lender_merged.csv:
+	$(PYTHON_INTERPRETER) src/data/join_loan_lenders.py
 
 
 #################################################################################
